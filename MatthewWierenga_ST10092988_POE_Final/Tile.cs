@@ -31,14 +31,14 @@ namespace MatthewWierenga_ST10092988_POE_Final
             set { typeoftile = value; }
         }
 
-        protected string symbol;
+        private string symbol;
         public string SYMBOL
         {
             get { return symbol; }
             set { symbol = value; }
         }
 
-        protected string weapon;
+        private string weapon;
         public string WEAPON
         {
             get { return weapon; }
@@ -47,13 +47,13 @@ namespace MatthewWierenga_ST10092988_POE_Final
 
         
 
-        public Tile(int _X, int _Y, string _SYMBOL, TileType _TYPEOFTILE,string _WEAPON)
+        public Tile(int _X, int _Y, string _SYMBOL, TileType _TYPEOFTILE)
         {
             X = _X;
             Y = _Y;
             SYMBOL = _SYMBOL;
             TYPEOFTILE = _TYPEOFTILE;
-            WEAPON = _WEAPON;
+            
 
         }
     }

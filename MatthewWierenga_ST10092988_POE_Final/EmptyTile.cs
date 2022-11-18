@@ -8,7 +8,11 @@ namespace MatthewWierenga_ST10092988_POE_Final
 {
     class EmptyTile: Tile
     {
-        public EmptyTile(int _X, int _Y, string _SYMBOL, TileType _TYPEOFTILE ) : base(_X,_Y,_SYMBOL,_TYPEOFTILE)
+        private string v;
+
+
+
+        public EmptyTile(int _X, int _Y, string _SYMBOL, TileType _TYPEOFTILE) : base(_X, _Y, _SYMBOL, _TYPEOFTILE)
         {
 
         }

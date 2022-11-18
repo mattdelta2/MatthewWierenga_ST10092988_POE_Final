@@ -49,6 +49,15 @@ namespace MatthewWierenga_ST10092988_POE_Final
         {
             get { return goldpurse; }
             set { goldpurse = value; }
+
+            
+        }
+
+        protected string weapon;
+        public string WEAPON
+        {
+            get { return weapon; }
+            set { weapon = value; }
         }
         protected Character(int _X, int _Y, TileType _TYPEOFTILE, string _SYMBOL, int _HP, int _MAXHP, int _DAMAGE) : base(_X, _Y, _SYMBOL, _TYPEOFTILE)
         {
@@ -59,6 +68,8 @@ namespace MatthewWierenga_ST10092988_POE_Final
             GOLDPURSE = new List<Item>();
 
             VISION = new List<Tile>();
+
+            //WEAPON = _WEAPON;
         }
 
         public virtual void Attack(Character Target)

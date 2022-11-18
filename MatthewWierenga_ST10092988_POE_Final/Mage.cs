@@ -8,7 +8,7 @@ namespace MatthewWierenga_ST10092988_POE_Final
 {
     class Mage : Enemy
     {
-        public Mage(int _X, int _Y, TileType _TYPEOFTILE, string _SYMBOL = "M", int _DAMAGE = 5, int _STARTINGHP = 5, int _MAXHP = 5) : base(_X, _Y, _TYPEOFTILE, _SYMBOL, _DAMAGE, _STARTINGHP, _MAXHP)
+        public Mage(int _X, int _Y, TileType _TYPEOFTILE, string _SYMBOL = "M", int _DAMAGE = 5, int _STARTINGHP = 5, int _MAXHP = 5)  : base(_X, _Y, _TYPEOFTILE, _SYMBOL, _DAMAGE, _STARTINGHP, _MAXHP)
         {
 
         }
