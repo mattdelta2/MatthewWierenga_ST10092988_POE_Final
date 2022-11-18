@@ -26,6 +26,9 @@ namespace MatthewWierenga_ST10092988_POE_Final
         {
             string Info = "Player Stats: \n";
             Info += "HP: " + HP.ToString() + "/" + MAXHP.ToString() + "\n";
+            Info += "Current Weapon: \n";
+            Info += "Weapon Range: \n";
+            Info += "Weapon Damage: \n";
             Info += "Damage: " + DAMAGE.ToString() + "\n";
             Info += "[" + X.ToString() + "," + Y.ToString() + "] \n";
             Info += " Amount of gold: " + GOLDPURSE.Count + "\n";
