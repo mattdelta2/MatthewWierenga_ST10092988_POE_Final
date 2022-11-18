@@ -179,7 +179,7 @@ namespace MatthewWierenga_ST10092988_POE_Final
                         HeroY = RANDOM_NUMBER_GENERATOR.Next(0, MAPHEIGHT);
                     }
 
-                    Hero NewHero = new Hero(HeroX, HeroY, TypeOfTile, "H", 100, 100, 10);
+                    Hero NewHero = new Hero(HeroX, HeroY, TypeOfTile, "H", 100, 100, 10, "W" );
                     PLAYERCHARACTER = NewHero;
                     MAPCONTAINER[HeroX, HeroY] = NewHero;
                     hX = HeroX;

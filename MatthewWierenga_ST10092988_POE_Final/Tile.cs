@@ -31,19 +31,29 @@ namespace MatthewWierenga_ST10092988_POE_Final
             set { typeoftile = value; }
         }
 
-        private string symbol;
+        protected string symbol;
         public string SYMBOL
         {
             get { return symbol; }
             set { symbol = value; }
         }
 
-        public Tile(int _X, int _Y, string _SYMBOL, TileType _TYPEOFTILE)
+        protected string weapon;
+        public string WEAPON
+        {
+            get { return weapon; }
+            set { weapon = value; }
+        }
+
+        
+
+        public Tile(int _X, int _Y, string _SYMBOL, TileType _TYPEOFTILE,string _WEAPON)
         {
             X = _X;
             Y = _Y;
             SYMBOL = _SYMBOL;
             TYPEOFTILE = _TYPEOFTILE;
+            WEAPON = _WEAPON;
 
         }
     }
