@@ -24,4 +24,16 @@ namespace MatthewWierenga_ST10092988_POE_Final
         Right,
         Left
     }
+
+    public enum MeleeWeapons
+    {
+        Dagger, 
+        Longsword
+    }
+
+    public enum RangedWeapons
+    {
+        Rifle,
+        Longbow
+    }
 }

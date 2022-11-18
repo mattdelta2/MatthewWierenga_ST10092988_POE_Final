@@ -27,6 +27,7 @@ namespace MatthewWierenga_ST10092988_POE_Final
             Info += "at [" + X.ToString() + "," + Y.ToString() + "]] \n";
             Info += HP.ToString() + " HP \n";
             Info += "{ " + DAMAGE.ToString() + "}";
+            
             return Info;
         }
     }

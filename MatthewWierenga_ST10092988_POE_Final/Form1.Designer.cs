@@ -31,15 +31,21 @@
             this.lblMap = new System.Windows.Forms.Label();
             this.rtbInfo = new System.Windows.Forms.RichTextBox();
             this.gbxAttack = new System.Windows.Forms.GroupBox();
-            this.cbxEnemies = new System.Windows.Forms.ComboBox();
-            this.rtbSelectedEnemy = new System.Windows.Forms.RichTextBox();
-            this.btnAttack = new System.Windows.Forms.Button();
             this.rtbAttackLog = new System.Windows.Forms.RichTextBox();
+            this.btnAttack = new System.Windows.Forms.Button();
+            this.rtbSelectedEnemy = new System.Windows.Forms.RichTextBox();
+            this.cbxEnemies = new System.Windows.Forms.ComboBox();
             this.btnUp = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
             this.btnLeft = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            this.rtbShop = new System.Windows.Forms.RichTextBox();
+            this.cbxShop = new System.Windows.Forms.ComboBox();
+            this.btnBuy = new System.Windows.Forms.Button();
             this.gbxAttack.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMap
@@ -72,21 +78,13 @@
             this.gbxAttack.TabStop = false;
             this.gbxAttack.Text = "Attacking";
             // 
-            // cbxEnemies
+            // rtbAttackLog
             // 
-            this.cbxEnemies.FormattingEnabled = true;
-            this.cbxEnemies.Location = new System.Drawing.Point(7, 20);
-            this.cbxEnemies.Name = "cbxEnemies";
-            this.cbxEnemies.Size = new System.Drawing.Size(208, 21);
-            this.cbxEnemies.TabIndex = 0;
-            // 
-            // rtbSelectedEnemy
-            // 
-            this.rtbSelectedEnemy.Location = new System.Drawing.Point(7, 48);
-            this.rtbSelectedEnemy.Name = "rtbSelectedEnemy";
-            this.rtbSelectedEnemy.Size = new System.Drawing.Size(208, 96);
-            this.rtbSelectedEnemy.TabIndex = 1;
-            this.rtbSelectedEnemy.Text = "";
+            this.rtbAttackLog.Location = new System.Drawing.Point(7, 192);
+            this.rtbAttackLog.Name = "rtbAttackLog";
+            this.rtbAttackLog.Size = new System.Drawing.Size(208, 77);
+            this.rtbAttackLog.TabIndex = 3;
+            this.rtbAttackLog.Text = "";
             // 
             // btnAttack
             // 
@@ -98,13 +96,21 @@
             this.btnAttack.UseVisualStyleBackColor = true;
             this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
             // 
-            // rtbAttackLog
+            // rtbSelectedEnemy
             // 
-            this.rtbAttackLog.Location = new System.Drawing.Point(7, 192);
-            this.rtbAttackLog.Name = "rtbAttackLog";
-            this.rtbAttackLog.Size = new System.Drawing.Size(208, 77);
-            this.rtbAttackLog.TabIndex = 3;
-            this.rtbAttackLog.Text = "";
+            this.rtbSelectedEnemy.Location = new System.Drawing.Point(7, 48);
+            this.rtbSelectedEnemy.Name = "rtbSelectedEnemy";
+            this.rtbSelectedEnemy.Size = new System.Drawing.Size(208, 96);
+            this.rtbSelectedEnemy.TabIndex = 1;
+            this.rtbSelectedEnemy.Text = "";
+            // 
+            // cbxEnemies
+            // 
+            this.cbxEnemies.FormattingEnabled = true;
+            this.cbxEnemies.Location = new System.Drawing.Point(7, 20);
+            this.cbxEnemies.Name = "cbxEnemies";
+            this.cbxEnemies.Size = new System.Drawing.Size(208, 21);
+            this.cbxEnemies.TabIndex = 0;
             // 
             // btnUp
             // 
@@ -146,11 +152,57 @@
             this.btnRight.UseVisualStyleBackColor = true;
             this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnBuy);
+            this.groupBox1.Controls.Add(this.cbxShop);
+            this.groupBox1.Controls.Add(this.rtbShop);
+            this.groupBox1.Location = new System.Drawing.Point(1111, 209);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 269);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Shop";
+            // 
+            // propertyGrid1
+            // 
+            this.propertyGrid1.Location = new System.Drawing.Point(897, 148);
+            this.propertyGrid1.Name = "propertyGrid1";
+            this.propertyGrid1.Size = new System.Drawing.Size(8, 8);
+            this.propertyGrid1.TabIndex = 8;
+            // 
+            // rtbShop
+            // 
+            this.rtbShop.Location = new System.Drawing.Point(6, 29);
+            this.rtbShop.Name = "rtbShop";
+            this.rtbShop.Size = new System.Drawing.Size(193, 73);
+            this.rtbShop.TabIndex = 0;
+            this.rtbShop.Text = "";
+            // 
+            // cbxShop
+            // 
+            this.cbxShop.FormattingEnabled = true;
+            this.cbxShop.Location = new System.Drawing.Point(0, 109);
+            this.cbxShop.Name = "cbxShop";
+            this.cbxShop.Size = new System.Drawing.Size(199, 21);
+            this.cbxShop.TabIndex = 1;
+            // 
+            // btnBuy
+            // 
+            this.btnBuy.Location = new System.Drawing.Point(35, 162);
+            this.btnBuy.Name = "btnBuy";
+            this.btnBuy.Size = new System.Drawing.Size(123, 48);
+            this.btnBuy.TabIndex = 2;
+            this.btnBuy.Text = "Buy";
+            this.btnBuy.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1481, 618);
+            this.Controls.Add(this.propertyGrid1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnLeft);
             this.Controls.Add(this.btnDown);
@@ -161,6 +213,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.gbxAttack.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +232,11 @@
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Button btnLeft;
         private System.Windows.Forms.Button btnRight;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnBuy;
+        private System.Windows.Forms.ComboBox cbxShop;
+        private System.Windows.Forms.RichTextBox rtbShop;
+        private System.Windows.Forms.PropertyGrid propertyGrid1;
     }
 }
 
