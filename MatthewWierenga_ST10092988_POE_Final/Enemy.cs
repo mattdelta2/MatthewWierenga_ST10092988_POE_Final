@@ -19,6 +19,7 @@ namespace MatthewWierenga_ST10092988_POE_Final
             DAMAGE = _DAMAGE;
             HP = _STARTINGHP;
             MAXHP = _MAXHP;
+            GOLDPURSE = new List<Item>();
         }
 
         public override string ToString()
@@ -26,7 +27,8 @@ namespace MatthewWierenga_ST10092988_POE_Final
             string Info = GetType().Name + "";
             Info += "at [" + X.ToString() + "," + Y.ToString() + "]] \n";
             Info += HP.ToString() + " HP \n";
-            Info += "{ " + DAMAGE.ToString() + "}";
+            Info += "{ " + DAMAGE.ToString() + "}\n";
+            Info += "Amount of Gold: " + goldpurse.Count();
             
             return Info;
         }
