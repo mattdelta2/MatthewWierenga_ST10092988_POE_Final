@@ -10,7 +10,11 @@ namespace MatthewWierenga_ST10092988_POE_Final
     {
         protected Random RANDOM_NUMBER_GENERATOR = new Random();
 
-        protected Enemy( int _X, int _Y, TileType _TYPEOFTILE, int _DAMAGE, int _STARTINGHP, int _MAXHP) : base (_X,_Y,_TYPEOFTILE, _DAMAGE, _STARTINGHP, _MAXHP)
+        public Enemy(int _X, int _Y, TileType _TYPEOFTILE, string _SYMBOL, int _HP, int _MAXHP, int _DAMAGE) : base(_X, _Y, _TYPEOFTILE, _SYMBOL, _HP, _MAXHP, _DAMAGE)
+        {
+        }
+
+        protected Enemy( int _X, int _Y, TileType _TYPEOFTILE, int _DAMAGE, int _STARTINGHP, int _MAXHP, string _SYMBOL) : base (_X,_Y,_TYPEOFTILE, _SYMBOL, _DAMAGE, _STARTINGHP, _MAXHP)
         {
             DAMAGE = _DAMAGE;
             HP = _STARTINGHP;
